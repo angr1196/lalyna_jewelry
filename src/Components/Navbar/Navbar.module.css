@@ -1,0 +1,51 @@
+.navbarWrapper {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.closeButton {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.closeButton img {
+    width: 20px;
+}
+
+.NavbarBlock {
+  
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.NavbarBlock div{
+    margin-bottom: 15px;
+    
+}
+
+.shopMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

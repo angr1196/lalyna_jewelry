@@ -1,0 +1,48 @@
+
+.container{
+   
+  background-color: #FFFFFF;
+  
+ 
+  
+}
+
+
+.content{
+ 
+  max-width: 100%;
+  padding: 24px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 1px solid #B0BEC5;
+}
+
+.burgerButton{
+  
+  border: none;
+background: none;
+padding: 0;
+cursor: pointer;
+}
+
+.cartButton{
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  width: 30px;
+
+
+}
+
+.logo{
+  width: 150px;
+  height: auto;
+}
+.cart{
+  width: 20px;
+}
+.burger{
+  width: 20px;
+}

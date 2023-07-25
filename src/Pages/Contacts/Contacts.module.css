@@ -1,0 +1,20 @@
+.contacts_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h3{
+    text-align: center;
+}
+
+/* .contacts_wrapper div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} */
+p{
+    text-align: center;
+}
