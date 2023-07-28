@@ -2,13 +2,15 @@
 .container{
    
   background-color: #FFFFFF;
+  position: sticky;
+  top: 0px;
   
  
   
 }
 
 
-.content{
+.navMobile{
  
   max-width: 100%;
   padding: 24px 18px;
@@ -45,4 +47,10 @@ cursor: pointer;
 }
 .burger{
   width: 20px;
+}
+
+@media(min-width: 768px){
+  .logo{
+    width: 190px;
+  }
 }

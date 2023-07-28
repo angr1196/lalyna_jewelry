@@ -10,16 +10,12 @@ const Footer = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div className={styles.links}>
-                    <a href="https://www.instagram.com/lalyna.jewelry/">
-                        
+                    <a href="https://www.facebook.com/lalyna.jewelry/" target="_blank">
                             Facebook  
-                    
                     </a>
                     |
-                    <a href="https://www.instagram.com/lalyna.jewelry/">
-                        
+                    <a href="https://www.instagram.com/lalyna.jewelry/" target="_blank">
                               Instagram
-                    
                     </a>
                 </div>
             

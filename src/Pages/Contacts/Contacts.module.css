@@ -6,8 +6,13 @@
 
 }
 
+.contacts_wrapper div{
+    margin-bottom: 10px;
+}
+
 h3{
     text-align: center;
+    margin-bottom: 5px;
 }
 
 /* .contacts_wrapper div{
@@ -17,4 +22,18 @@ h3{
 } */
 p{
     text-align: center;
+    margin: 0;
 }
+
+/* a{
+    text-decoration: none;
+} */
+
+
+/* .email a{
+    text-decoration: none;
+}
+
+.phone a{
+    text-decoration: none;
+} */

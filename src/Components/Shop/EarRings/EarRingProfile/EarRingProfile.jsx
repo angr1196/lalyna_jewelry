@@ -8,28 +8,28 @@ const EarRingProfile = () => {
 
     let params = useParams();
 
-    const earRingsList = useSelector(state => state.earRings.goodsList) 
+    const earRingsList = useSelector(state => state.earRings.earRingsArray) 
 
-    const earRing = earRingsList.find((item) => item.id === params.earRingID);
+    const earRingItem = earRingsList.find((item) => item.id === params.earRingID);
 
 
 
     return (
         <div>
             <div className={styles.photoBlock}>
-                <img src={earRing.photo} alt="" />
+                <img src={earRingItem.earRing.photo} alt="" />
             </div>
 
             <div className={styles.descriptionBlock}>
 
                 <div>
-                    Артикул: {earRing.id}
+                    Артикул: {earRingItem.id}
                 </div>
                 <div>
-                    Назва: {earRing.name}
+                    Назва: {earRingItem.earRing.name}
                 </div>
                 <div>
-                    Ціна: {earRing.price}
+                    Ціна: {earRingItem.earRing.price}
                 </div>
                 <div>
                     Колір: срібний

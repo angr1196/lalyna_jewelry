@@ -1,0 +1,18 @@
+
+
+
+@media (min-width: 480px)  {
+    .container {
+      display: grid; /* Используем сетку для отображения товаров в ряды */
+      grid-template-columns: repeat(2, 1fr); /* Два товара в одном ряду */
+      gap: 20px; /* Расстояние между товарами */
+    }
+  }
+
+  @media (min-width: 769px) {
+    .container {
+      display: grid; /* Используем сетку для отображения товаров в ряды */
+      grid-template-columns: repeat(3, 1fr); /* Три товара в одном ряду */
+      gap: 20px; /* Расстояние между товарами */
+    }
+  }

@@ -13,3 +13,7 @@
 .logo img{
     width: 80px;
 }
+
+.links a{
+    margin:0 5px;
+}

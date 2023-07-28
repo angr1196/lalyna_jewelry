@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 let Header = (props) => {
     return (
         <div className={styles.container}>
-            <div className={styles.content}>
+            <div className={styles.navMobile}>
                 <button className={styles.burgerButton} onClick={props.onOpen} >
                     <img className={styles.burger} src={burgerIcon} alt="#" />
                 </button>
@@ -18,7 +18,6 @@ let Header = (props) => {
                     UA
                     {/* <img className={styles.cart} src={cart} alt="#" /> */}
                 </button>
-
             </div>
 
         </div>

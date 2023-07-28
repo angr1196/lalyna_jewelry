@@ -4,19 +4,19 @@ import styles from './GoodsItem.module.css'
 
 const GoodsItem =(props)=>{
 
-    const url = '/' + props.item.category + '/' + props.item.id;
+    const url = '/' + props.item.earRing.category + '/' + props.item.id;
 
     return(
-        <div>
+        <div className={styles.container}>
             <div className={styles.imgWrapper}>
                 <Link to={url} >
-                <img src={props.item.photo} alt="" />
+                <img src={props.item.earRing.photo} alt="" />
                 </Link>
             </div>
             <div>
-                <a>{props.item.id} {props.item.name} </a>
+                <a>{props.item.id} {props.item.earRing.name} </a>
                 <br />
-                <a>{props.item.price}</a>
+                <a>{props.item.earRing.price}</a>
 
             </div>
 

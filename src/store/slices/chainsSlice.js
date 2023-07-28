@@ -57,5 +57,5 @@ const chainsSlice = createSlice({
     }
 })
 
-export const {setChains} = chainsSlice.actions;
+export const chainsActions = chainsSlice.actions;
 export default chainsSlice;
