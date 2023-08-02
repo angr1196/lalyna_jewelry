@@ -3,9 +3,11 @@ import { NavLink } from 'react-router-dom';
 import closeIcon from '../../assets/images/closeIcon.svg'
 import { useState } from 'react';
 
+
 let Navbar = (props) => {
 
-   const shopMenu = (<div className={styles.shopMenu} onClick={props.onClose}>
+   const shopMenu = (
+   <div className={styles.shopMenu} onClick={props.onClose}>
         <div>
             <NavLink to={'/chains'}>ЛАНЦЮЖКИ</NavLink>
         </div>
@@ -38,7 +40,7 @@ let Navbar = (props) => {
 
 
     return (
-        <div className={styles.navbarWrapper} >
+        <div className={styles.container}>
             <button className={styles.closeButton} onClick={props.onClose}>
                 <img src={closeIcon} alt="" />
             </button>
@@ -49,7 +51,7 @@ let Navbar = (props) => {
                     <a onClick={onToggleShopHandler} >МАГАЗИН</a>
                     {/* <NavLink to={'/shop'}>МАГАЗИН</NavLink> */}
                 </div>
-                {isShopOpen&&shopMenu}
+                {isShopOpen && shopMenu}
 
 
                 <div onClick={props.onClose}>
@@ -63,6 +65,7 @@ let Navbar = (props) => {
                 </div>
             </nav>
         </div>
+        
     )
 }
 

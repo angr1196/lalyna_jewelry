@@ -2,9 +2,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Header';
-import Navbar from './Components/Navbar/Navbar';
+// import Navbar from './Components/Navbar/Navbar';
 import Contacts from './Pages/Contacts/Contacts';
-import { useState } from 'react';
+
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import CareRules from './Pages/CareRules/CareRules';
@@ -17,22 +17,22 @@ import ChainProfile from './Components/Shop/Chains/ChainProfile/ChainProfile';
 
 function App(props) {
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const onOpenHandler = () => {
-    setIsOpen(true);
-  }
+  // const onOpenHandler = () => {
+  //   setIsOpen(true);
+  // }
 
-  const onCloseHandler = () => {
-    setIsOpen(false);
-  }
+  // const onCloseHandler = () => {
+  //   setIsOpen(false);
+  // }
 
 
   return (
     <div class="app-wrapper">
-      <Header onOpen={onOpenHandler} />
-      {isOpen && <Navbar onClose={onCloseHandler} />}
-      {/* <Navbar /> */}
+      <Header/>
+      {/* {isOpen && <Navbar onClose={onCloseHandler} />}
+      <Navbar /> */}
       <div class="content-wrapper">
         <Routes>
           <Route path='/' element={<Home />} />

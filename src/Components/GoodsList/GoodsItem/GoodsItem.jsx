@@ -10,7 +10,7 @@ const GoodsItem =(props)=>{
         <div className={styles.container}>
             <div className={styles.imgWrapper}>
                 <Link to={url} >
-                <img src={props.item.earRing.photo} alt="" />
+                <img src={props.item.earRing.images[0]} alt="" />
                 </Link>
             </div>
             <div>

@@ -7,8 +7,8 @@ const Home=()=>{
 
     return(
         <div className={styles.container}>
-            {/* <img src={introImg} alt="" /> */}
-            <Carousel/>
+            <img src={introImg} alt="" />
+            {/* <Carousel/> */}
         </div>
     )
 }

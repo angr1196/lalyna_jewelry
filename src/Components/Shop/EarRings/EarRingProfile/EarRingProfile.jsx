@@ -1,6 +1,9 @@
 import styles from './EarRingProfile.module.css'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import ImageCarousel from '../../../UX/ImageCarousel';
+import ImageSlider from '../../../UX/ImageSlider';
+
 
 
 
@@ -15,36 +18,35 @@ const EarRingProfile = () => {
 
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.photoBlock}>
-                <img src={earRingItem.earRing.photo} alt="" />
+                {/* <img src={earRingItem.earRing.images[0]} alt="" /> */}
+                {/* <ProductSlider images={earRingItem.earRing.images} /> */}
+                {/* <ImageCarousel images={earRingItem.earRing.images} /> */}
+                <ImageSlider images={earRingItem.earRing.images}/>
             </div>
 
             <div className={styles.descriptionBlock}>
 
                 <div>
-                    Артикул: {earRingItem.id}
+                    {earRingItem.id} {earRingItem.earRing.name}
                 </div>
-                <div>
+                {/* <div>
                     Назва: {earRingItem.earRing.name}
-                </div>
+                </div> */}
                 <div>
-                    Ціна: {earRingItem.earRing.price}
+                   {earRingItem.earRing.price}
                 </div>
                 <div>
                     Колір: срібний
                 </div>
 
                 <div>
-                    Сережки кільця
+                    Матеріал:  {earRingItem.earRing.material}
                 </div>
 
                 <div>
-                    Матеріал: медична сталь
-                </div>
-
-                <div>
-                    Діаметр: 4.5 см
+                {earRingItem.earRing.description}
                 </div>
             </div>
         </div>
