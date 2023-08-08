@@ -21,7 +21,7 @@ let Header = (props) => {
 
 
     return (
-        <div className={styles.container}>
+        <header className={styles.container}>
             <div className={styles.navMobile}>
                 <button className={styles.burgerButton} onClick={onOpenHandler} >
                     <img className={styles.burger} src={burgerIcon} alt="#" />
@@ -54,7 +54,7 @@ let Header = (props) => {
 
             </div>
 
-        </div>
+        </header>
     )
 }
 

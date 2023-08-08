@@ -1,7 +1,6 @@
 import styles from './EarRingProfile.module.css'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import ImageCarousel from '../../../UX/ImageCarousel';
 import ImageSlider from '../../../UX/ImageSlider';
 
 

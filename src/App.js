@@ -46,9 +46,7 @@ function App(props) {
         </Routes>
 
       </div>
-      <footer>
-        <Footer />
-      </footer>
+        <Footer />  
     </div>
   );
 }

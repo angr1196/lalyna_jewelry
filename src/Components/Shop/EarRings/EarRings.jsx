@@ -9,14 +9,14 @@ const EarRings = () => {
 
     const list = useSelector(state => state.earRings.earRingsArray);
 
-    const dispatFunction = useDispatch();
+    const dispatchFunction = useDispatch();
 
     useEffect(() => {
-        dispatFunction(fetchEarRings());
+        dispatchFunction(fetchEarRings());
     }, []);
 
     return (
-        <div>
+        <div className={styles.container}>
             <GoodsList list={list} />
         </div>
     )

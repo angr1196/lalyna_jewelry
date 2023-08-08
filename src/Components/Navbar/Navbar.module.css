@@ -48,6 +48,12 @@
 
 .NavbarBlock div{
     margin-bottom: 15px;
+
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+
     
 }
 

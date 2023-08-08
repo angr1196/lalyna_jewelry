@@ -4,7 +4,7 @@
   background-color: #FFFFFF;
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 5;
   
  
   
@@ -18,7 +18,7 @@
 .navMobile{
  
   max-width: 100%;
-  padding: 24px 18px;
+  padding: 20px 18px;
   display: flex;
   justify-content: space-between;
   align-items:center;

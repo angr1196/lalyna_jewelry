@@ -4,7 +4,7 @@ import logo from '../../assets/images/lalynaLogo.svg'
 const Footer = () => {
 
     return (
-        <div className={styles.container}>
+        <footer className={styles.container}>
            
                 <div className={styles.logo}>
                     <img src={logo} alt="" />
@@ -19,7 +19,7 @@ const Footer = () => {
                     </a>
                 </div>
             
-        </div>
+        </footer>
     )
 }
 

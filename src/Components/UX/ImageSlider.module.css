@@ -1,0 +1,24 @@
+/* ImageCarousel.module.css */
+/* Стили для кнопок карусели */
+.image-gallery-custom-button {
+    z-index: 0;
+  }
+  
+  /* Стили для левой кнопки */
+  .custom-left-nav-button {
+    /* Ваши пользовательские стили для левой кнопки */
+  }
+  
+  /* Стили для правой кнопки */
+  .custom-right-nav-button {
+    /* Ваши пользовательские стили для правой кнопки */
+  }
+  
+  /* Стили для контейнера кнопок */
+  .custom-button-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
