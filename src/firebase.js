@@ -2,17 +2,14 @@
 import { initializeApp } from "firebase/app";
 import {getFirestore} from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC_DnRUd8534BpLqvb2tNSFWiO30v1pxs4",
-  authDomain: "lalyna-project.firebaseapp.com",
-  databaseURL: "https://lalyna-project-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "lalyna-project",
-  storageBucket: "lalyna-project.appspot.com",
-  messagingSenderId: "691002543831",
-  appId: "1:691002543831:web:381e26d005942554092a92"
+  apiKey: "AIzaSyB_6US9IoYsBDiwnK8gx_9-geHdDwrclMI",
+  authDomain: "lalyna-jewelry-556ec.firebaseapp.com",
+  projectId: "lalyna-jewelry-556ec",
+  storageBucket: "lalyna-jewelry-556ec.appspot.com",
+  messagingSenderId: "90395139642",
+  appId: "1:90395139642:web:568a4e18f02d1d4ea51f03"
 };
 
 // Initialize Firebase

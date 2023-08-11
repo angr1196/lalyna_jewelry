@@ -10,7 +10,7 @@ const EarRingProfile = () => {
 
     let params = useParams();
 
-    const earRingsList = useSelector(state => state.earRings.earRingsArray) 
+    const earRingsList = useSelector(state => state.product.earRingsArray) 
 
     const earRingItem = earRingsList.find((item) => item.id === params.earRingID);
 
@@ -22,30 +22,30 @@ const EarRingProfile = () => {
                 {/* <img src={earRingItem.earRing.images[0]} alt="" /> */}
                 {/* <ProductSlider images={earRingItem.earRing.images} /> */}
                 {/* <ImageCarousel images={earRingItem.earRing.images} /> */}
-                <ImageSlider images={earRingItem.earRing.images}/>
+                <ImageSlider images={earRingItem.item.images}/>
             </div>
 
             <div className={styles.descriptionBlock}>
 
                 <div>
-                    {earRingItem.id} {earRingItem.earRing.name}
+                    {earRingItem.id} {earRingItem.item.name}
                 </div>
                 {/* <div>
                     Назва: {earRingItem.earRing.name}
                 </div> */}
                 <div>
-                   {earRingItem.earRing.price}
+                   {earRingItem.item.price}
                 </div>
                 <div>
                     Колір: срібний
                 </div>
 
                 <div>
-                    Матеріал:  {earRingItem.earRing.material}
+                    Матеріал:  {earRingItem.item.material}
                 </div>
 
                 <div>
-                {earRingItem.earRing.description}
+                {earRingItem.item.description}
                 </div>
             </div>
         </div>

@@ -12,8 +12,7 @@ export const fetchEarRings = createAsyncThunk(
     async () => {
         const querySnapshot = await getDocs(collection(db, 'earRings'));
         const earRings = querySnapshot.docs.map((doc) => ({
-            id: doc.id,
-            earRing: doc.data(),
+            product: doc.data(),
         }));
         return earRings;
     }

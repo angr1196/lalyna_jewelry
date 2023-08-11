@@ -4,7 +4,7 @@ import styles from './GoodsItem.module.css'
 
 const GoodsItem =(props)=>{
 
-    const url = '/' + props.item.earRing.category + '/' + props.item.id;
+    const url = '/' + props.product.category + '/' + props.product.id;
 
     return(
         // <div className={styles.container}>
@@ -23,15 +23,15 @@ const GoodsItem =(props)=>{
         // </div>
         <div className={styles.container}>
             <Link to={url} >
-            <img src={props.item.earRing.images[0]} alt="" />
-            </Link>
-        <div>
-            <a>{props.item.id} {props.item.earRing.name} </a>
+            <img src={props.product.images[0]} alt="" />
+            
+        <div className={styles.textBlock}>
+            <span>{props.product.id} {props.product.name} </span>
             <br />
-            <a>{props.item.earRing.price}</a>
+            <span className={styles.price}>{props.product.price} грн</span>
 
         </div>
-
+        </Link>
     </div>
     )
 }

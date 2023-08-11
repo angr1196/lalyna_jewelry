@@ -12,10 +12,10 @@ let Navbar = (props) => {
             <NavLink to={'/chains'}>ЛАНЦЮЖКИ</NavLink>
         </div>
         <div>
-            <NavLink to={'/ear-rings'}>СЕРЕЖКИ</NavLink>
+            <NavLink to={'/earRings'}>СЕРЕЖКИ</NavLink>
         </div>
         <div>
-            <NavLink to={'/locations'}>КАФИ</NavLink>
+            <NavLink to={'/earCuffs'}>КАФИ</NavLink>
         </div>
         <div>
             <NavLink to={'/locations'}>БРАСЛЕТИ НА РУКУ</NavLink>

@@ -1,39 +1,50 @@
-.contacts_wrapper{
+.container {
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-}
-
-.contacts_wrapper div{
-    margin-bottom: 10px;
-}
-
-h3{
+    justify-content: center;
+    
+  }
+  
+  .content {
+   text-align: center;
+    
+    font-family: 'Montserrat';
+    
+  }
+  
+  .topic {
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .topic h2{
+    font-size: 24px;
+  }
+  
+  .contactItem {
+    margin-bottom: 20px;
+  }
+  
+  .contactItem h3 {
+    font-size: 20px;
     margin-bottom: 5px;
-}
-
-/* .contacts_wrapper div{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-} */
-p{
-    text-align: center;
-    margin: 0;
-}
-
-/* a{
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .contactItem a {
+    font-style: italic;
+    font-weight: 400;
     text-decoration: none;
-} */
-
-
-/* .email a{
-    text-decoration: none;
-}
-
-.phone a{
-    text-decoration: none;
-} */
+    color: black;
+    
+  }
+  
+  
+  .contactItem p {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  

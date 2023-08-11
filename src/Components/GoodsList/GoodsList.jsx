@@ -5,7 +5,7 @@ const GoodsList = (props) => {
 
     return (
         <div className={styles.container}> 
-            {props.list.map(item=><GoodsItem key ={item.id} item={item}/> )}  
+            {props.productList.map(item=><GoodsItem key ={item.product.id} product={item.product}/> )}  
         </div>
     )
 }

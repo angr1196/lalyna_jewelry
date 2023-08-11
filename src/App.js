@@ -12,6 +12,7 @@ import Chains from './Components/Shop/Chains/Chains';
 import EarRings from './Components/Shop/EarRings/EarRings';
 import EarRingProfile from './Components/Shop/EarRings/EarRingProfile/EarRingProfile';
 import ChainProfile from './Components/Shop/Chains/ChainProfile/ChainProfile';
+import EarCuffs from './Components/Shop/EarCuffs/EarCuffs';
 
 
 
@@ -40,9 +41,10 @@ function App(props) {
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/care' element={<CareRules />} />
           <Route path='/chains' element={<Chains />} />
-          <Route path='/ear-rings/:earRingID' element={<EarRingProfile />} />
-          <Route path='/ear-rings' element={<EarRings />} />
+          <Route path='/earRings/:earRingID' element={<EarRingProfile />} />
+          <Route path='/earRings' element={<EarRings />} />
           <Route path='/chains/:chainID' element={<ChainProfile/>} />
+          <Route path='/earCuffs' element={<EarCuffs />} />
         </Routes>
 
       </div>
