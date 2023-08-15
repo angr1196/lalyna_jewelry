@@ -25,25 +25,20 @@ const EarCuffsProfile = () => {
 
             <div className={styles.descriptionBlock}>
 
-                <div>
+                <div className={styles.topic}>
                     {earCuffItem.product.id} {earCuffItem.product.name}
                 </div>
-                {/* <div>
-                    Назва: {earRingItem.earRing.name}
-                </div> */}
-                <div>
-                   {earCuffItem.product.price}
+              
+                <div className={styles.price}>
+                   {earCuffItem.product.price} грн
                 </div>
-                <div>
-                    Колір: срібний
-                </div>
-
-                <div>
+            
+                <div className={styles.material}>
                     Матеріал:  {earCuffItem.product.material}
                 </div>
 
-                <div>
-                {earCuffItem.product.description}
+                <div className={styles.size}>
+                Зозмір: {earCuffItem.product.size}
                 </div>
             </div>
         </div>

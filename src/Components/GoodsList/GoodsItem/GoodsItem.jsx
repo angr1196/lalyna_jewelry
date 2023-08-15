@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import styles from './GoodsItem.module.css'
 
 
-const GoodsItem =(props)=>{
+const GoodsItem = (props) => {
 
     const url = '/' + props.product.category + '/' + props.product.id;
 
-    return(
+    return (
         // <div className={styles.container}>
         //     <div className={styles.imgWrapper}>
         //         <Link to={url} >
@@ -23,16 +23,15 @@ const GoodsItem =(props)=>{
         // </div>
         <div className={styles.container}>
             <Link to={url} >
-            <img src={props.product.images[0]} alt="" />
-            
-        <div className={styles.textBlock}>
-            <span>{props.product.id} {props.product.name} </span>
-            <br />
-            <span className={styles.price}>{props.product.price} грн</span>
+                <img src={props.product.images[0]} alt="" />
 
+                <div className={styles.textBlock}>
+                    <h2 className={styles.title}>{props.product.id} {props.product.name} </h2>
+                    <span className={styles.price}>{props.product.price} грн</span>
+
+                </div>
+            </Link>
         </div>
-        </Link>
-    </div>
     )
 }
 

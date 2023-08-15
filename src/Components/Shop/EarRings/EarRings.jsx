@@ -7,13 +7,15 @@ import { fetchEarRings } from '../../../store/slices/earRingsSlice'
 
 const EarRings = () => {
 
-    const productList = useSelector(state => state.earRings.goodsArray);
+    
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
         dispatchFunction(fetchEarRings());
     }, []);
+
+    const productList = useSelector(state => state.earRings.goodsArray);
 
     return (
         <div className={styles.container}>

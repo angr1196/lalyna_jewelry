@@ -7,13 +7,15 @@ import { fetchBijouterie } from '../../../store/slices/bijouterieSlice'
 
 const Bijouterie = () => {
 
-    const productList = useSelector(state => state.bijouterie.goodsArray);
+   
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
         dispatchFunction(fetchBijouterie());
     }, []);
+
+    const productList = useSelector(state => state.bijouterie.goodsArray);
 
     return (
         <div className={styles.container}>

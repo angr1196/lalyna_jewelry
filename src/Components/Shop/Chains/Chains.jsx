@@ -7,14 +7,16 @@ import { fetchChains } from '../../../store/slices/chainsSlice'
 
 const Chains = () => {
 
-    const productList = useSelector(state => state.chains.goodsArray);
-    console.log(productList)
+    
+   
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
         dispatchFunction(fetchChains());
     }, []);
+
+    const productList = useSelector(state => state.chains.goodsArray);
 
     return (
         <div className={styles.container}>

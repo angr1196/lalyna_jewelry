@@ -27,25 +27,21 @@ const HandBraceletProfile = () => {
 
             <div className={styles.descriptionBlock}>
 
-                <div>
+                <div className={styles.topic}>
                     {handBraceletItem.id} {handBraceletItem.product.name}
                 </div>
-                {/* <div>
-                    Назва: {earRingItem.earRing.name}
-                </div> */}
-                <div>
-                   {handBraceletItem.product.price}
+              
+                <div className={styles.price}>
+                   {handBraceletItem.product.price} грн
                 </div>
-                <div>
-                    Колір: срібний
-                </div>
+               
 
-                <div>
+                <div className={styles.material}>
                     Матеріал:  {handBraceletItem.product.material}
                 </div>
 
-                <div>
-                {handBraceletItem.product.description}
+                <div className={styles.size}>
+                Розмір: {handBraceletItem.product.size}
                 </div>
             </div>
         </div>

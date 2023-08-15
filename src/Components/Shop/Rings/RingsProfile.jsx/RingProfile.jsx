@@ -26,25 +26,21 @@ const RingProfile = () => {
 
             <div className={styles.descriptionBlock}>
 
-                <div>
+                <div className={styles.topic}>
                     {ringItem.product.id} {ringItem.product.name}
                 </div>
-                {/* <div>
-                    Назва: {earRingItem.earRing.name}
-                </div> */}
-                <div>
-                   {ringItem.product.price}
+            
+                <div className={styles.price}>
+                   {ringItem.product.price} грн
                 </div>
-                <div>
-                    Колір: срібний
-                </div>
+               
 
-                <div>
+                <div className={styles.material}>
                     Матеріал:  {ringItem.product.material}
                 </div>
 
-                <div>
-                {ringItem.product.description}
+                <div className={styles.size}>
+                Розмір: {ringItem.product.size}
                 </div>
             </div>
         </div>

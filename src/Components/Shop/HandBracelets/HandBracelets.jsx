@@ -7,7 +7,7 @@ import { fetchHandBracelets } from '../../../store/slices/handBraceletsSlice'
 
 const HandBracelets = () => {
 
-    const productList = useSelector(state => state.handBracelets.goodsArray);
+    
 
     const dispatchFunction = useDispatch();
 
@@ -15,8 +15,11 @@ const HandBracelets = () => {
         dispatchFunction(fetchHandBracelets());
     }, []);
 
+    const productList = useSelector(state => state.handBracelets.goodsArray);
+
     return (
         <div className={styles.container}>
+            
             <GoodsList productList={productList} />
         </div>
     )

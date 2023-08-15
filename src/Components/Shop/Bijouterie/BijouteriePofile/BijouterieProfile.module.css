@@ -1,0 +1,27 @@
+.container{
+    font-family: 'Montserrat';
+}
+
+.topic{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.price{
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 8px;
+
+}
+
+.material{
+    font-size: 16px;
+    margin-bottom: 3px;
+
+}
+
+.size{
+    font-size: 16px;
+}

@@ -25,25 +25,20 @@ const EarRingProfile = () => {
 
             <div className={styles.descriptionBlock}>
 
-                <div>
+                <div className={styles.topic}>
                     {earRingItem.product.id} {earRingItem.product.name}
                 </div>
-                {/* <div>
-                    Назва: {earRingItem.earRing.name}
-                </div> */}
-                <div>
-                   {earRingItem.product.price}
-                </div>
-                <div>
-                    Колір: срібний
+              
+                <div className={styles.price}>
+                   {earRingItem.product.price} грн
                 </div>
 
-                <div>
+                <div className={styles.material}>
                     Матеріал:  {earRingItem.product.material}
                 </div>
 
-                <div>
-                {earRingItem.product.description}
+                <div className={styles.size}>
+                Розмір: {earRingItem.product.size}
                 </div>
             </div>
         </div>

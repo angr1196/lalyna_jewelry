@@ -17,7 +17,7 @@ import LegBracelets from './Components/Shop/LegBracelets/LegBracelets';
 import HandBracelets from './Components/Shop/HandBracelets/HandBracelets';
 import HandBraceletProfile from './Components/Shop/HandBracelets/HandBraceletProfile/HandBraceletProfile';
 import Rings from './Components/Shop/Rings/Rings';
-import RingProfile from './Components/Shop/Rings/RingsProfile.jsx/RingProfile';
+import RingProfile from './Components/Shop/Rings/RingsProfile/RingProfile';
 import Bijouterie from './Components/Shop/Bijouterie/Bijouterie';
 import BijouterieProfile from './Components/Shop/Bijouterie/BijouteriePofile/BijouterieProfile';
 import EarCuffsProfile from './Components/Shop/EarCuffs/EarCuffsProfile/EarCuffsProfile';

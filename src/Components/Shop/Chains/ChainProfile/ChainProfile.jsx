@@ -16,33 +16,24 @@ const ChainProfile = () => {
     return (
         <div className={styles.container}>
             <div className={styles.photoBlock}>
-                {/* <img src={earRingItem.earRing.images[0]} alt="" /> */}
-                {/* <ProductSlider images={earRingItem.earRing.images} /> */}
-                {/* <ImageCarousel images={earRingItem.earRing.images} /> */}
+
                 <ImageSlider images={chainItem.product.images}/>
             </div>
 
             <div className={styles.descriptionBlock}>
 
-                <div>
+                <div className={styles.topic}>
                     {chainItem.product.id} {chainItem.product.name}
                 </div>
-                {/* <div>
-                    Назва: {earRingItem.earRing.name}
-                </div> */}
-                <div>
-                   {chainItem.product.price}
+                <div className={styles.price}>
+                   {chainItem.product.price} грн
                 </div>
-                <div>
-                    Колір: срібний
-                </div>
-
-                <div>
+                <div className={styles.material}>
                     Матеріал:  {chainItem.product.material}
                 </div>
 
-                <div>
-                {chainItem.product.description}
+                <div className={styles.size}>
+                Розмір: {chainItem.product.size}
                 </div>
             </div>
         </div>
