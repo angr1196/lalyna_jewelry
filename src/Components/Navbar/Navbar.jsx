@@ -18,13 +18,13 @@ let Navbar = (props) => {
             <NavLink to={'/earCuffs'}>КАФИ</NavLink>
         </div>
         <div>
-            <NavLink to={'/locations'}>БРАСЛЕТИ НА РУКУ</NavLink>
+            <NavLink to={'/handBracelets'}>БРАСЛЕТИ НА РУКУ</NavLink>
         </div>
         <div>
-            <NavLink to={'/locations'}>БРАСЛЕТИ НА НОГУ</NavLink>
+            <NavLink to={'/legBracelets'}>БРАСЛЕТИ НА НОГУ</NavLink>
         </div>
         <div>
-            <NavLink to={'/rings'}>КІЛЬЦЯ</NavLink>
+            <NavLink to={'/rings'}>КАБЛУЧКИ</NavLink>
         </div>
         <div>
             <NavLink to={'/bijouterie'}>БІЖУТЕРІЯ</NavLink>

@@ -33,12 +33,17 @@ padding: 0;
 cursor: pointer;
 }
 
-.cartButton{
+.languageButton{
   border: none;
   background: none;
   padding: 0;
   cursor: pointer;
   width: 30px;
+  font-family: 'Montserrat';
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
 
 
 }

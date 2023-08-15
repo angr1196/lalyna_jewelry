@@ -70,5 +70,6 @@ body, html {
 @media(min-width: 1024px){
   .content-wrapper{
     padding: 15px 200px;
+  
   }
 }

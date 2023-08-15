@@ -1,18 +1,18 @@
-import styles from './EarCuffs.module.css'
+import styles from './HandBracelets.module.css'
 import GoodsList from '../../GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchEarCuffs } from '../../../store/slices/earCuffsSlice'
+import { fetchHandBracelets } from '../../../store/slices/handBraceletsSlice'
 
 
-const EarCuffs = () => {
+const HandBracelets = () => {
 
-    const productList = useSelector(state => state.earCuffs.goodsArray);
+    const productList = useSelector(state => state.handBracelets.goodsArray);
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
-        dispatchFunction(fetchEarCuffs());
+        dispatchFunction(fetchHandBracelets());
     }, []);
 
     return (
@@ -22,4 +22,4 @@ const EarCuffs = () => {
     )
 }
 
-export default EarCuffs;
+export default HandBracelets;

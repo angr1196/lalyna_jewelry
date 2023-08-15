@@ -7,28 +7,28 @@ const initialState = {
     goodsArray: []
 }
 
-export const fetchChains = createAsyncThunk(
-    'chains/fetchChains',
+export const fetchRings = createAsyncThunk(
+    'rings/fetchRings',
     async () => {
-        const querySnapshot = await getDocs(collection(db, 'chains'));
-        const chains = querySnapshot.docs.map((doc) => ({
+        const querySnapshot = await getDocs(collection(db, 'rings'));
+        const rings = querySnapshot.docs.map((doc) => ({
             product: doc.data(),
         }));
-        return chains;
+        return rings;
     }
 );
 
-const chainsSlice = createSlice({
-    name: 'chains',
+const ringsSlice = createSlice({
+    name: 'rings',
     initialState,
     // reducers: {},
     extraReducers: (builder) => {
         builder
-            .addCase(fetchChains.fulfilled, (state, action) => {
+            .addCase(fetchRings.fulfilled, (state, action) => {
                 state.goodsArray = action.payload;
             })
     }
 })
 
-export const chainsActions = chainsSlice.actions;
-export default chainsSlice;
+export const ringsActions = ringsSlice.actions;
+export default ringsSlice;

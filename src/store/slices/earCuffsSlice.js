@@ -4,7 +4,7 @@ import { db } from '../../firebase';
 
 
 const initialState = {
-    earCuffsArray: []
+    goodsArray: []
 }
 
 export const fetchEarCuffs = createAsyncThunk(
@@ -25,7 +25,7 @@ const earCuffsSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchEarCuffs.fulfilled, (state, action) => {
-                state.earCuffsArray = action.payload;
+                state.goodsArray = action.payload;
             })
     }
 })

@@ -1,48 +1,48 @@
 import styles from './ChainProfile.module.css'
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import ImageSlider from '../../../UX/ImageSlider';
 
 const ChainProfile = () => {
 
     let params = useParams();
 
-    const chainsList = useSelector(state => state.chains.goodsList) 
+    const chainsList = useSelector(state => state.chains.goodsArray) 
 
-    const chain = chainsList.find((item) => item.id === params.chainID);
+    const chainItem = chainsList.find((item) => item.product.id === params.chainID);
 
 
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.photoBlock}>
-                <img src={chain.photo} alt="" />
+                {/* <img src={earRingItem.earRing.images[0]} alt="" /> */}
+                {/* <ProductSlider images={earRingItem.earRing.images} /> */}
+                {/* <ImageCarousel images={earRingItem.earRing.images} /> */}
+                <ImageSlider images={chainItem.product.images}/>
             </div>
 
             <div className={styles.descriptionBlock}>
 
                 <div>
-                    Артикул: {chain.id}
+                    {chainItem.product.id} {chainItem.product.name}
                 </div>
+                {/* <div>
+                    Назва: {earRingItem.earRing.name}
+                </div> */}
                 <div>
-                    Назва: {chain.name}
-                </div>
-                <div>
-                    Ціна: {chain.price}
+                   {chainItem.product.price}
                 </div>
                 <div>
                     Колір: срібний
                 </div>
 
                 <div>
-                    Сережки кільця
+                    Матеріал:  {chainItem.product.material}
                 </div>
 
                 <div>
-                    Матеріал: медична сталь
-                </div>
-
-                <div>
-                    Діаметр: 4.5 см
+                {chainItem.product.description}
                 </div>
             </div>
         </div>

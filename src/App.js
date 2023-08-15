@@ -13,6 +13,14 @@ import EarRings from './Components/Shop/EarRings/EarRings';
 import EarRingProfile from './Components/Shop/EarRings/EarRingProfile/EarRingProfile';
 import ChainProfile from './Components/Shop/Chains/ChainProfile/ChainProfile';
 import EarCuffs from './Components/Shop/EarCuffs/EarCuffs';
+import LegBracelets from './Components/Shop/LegBracelets/LegBracelets';
+import HandBracelets from './Components/Shop/HandBracelets/HandBracelets';
+import HandBraceletProfile from './Components/Shop/HandBracelets/HandBraceletProfile/HandBraceletProfile';
+import Rings from './Components/Shop/Rings/Rings';
+import RingProfile from './Components/Shop/Rings/RingsProfile.jsx/RingProfile';
+import Bijouterie from './Components/Shop/Bijouterie/Bijouterie';
+import BijouterieProfile from './Components/Shop/Bijouterie/BijouteriePofile/BijouterieProfile';
+import EarCuffsProfile from './Components/Shop/EarCuffs/EarCuffsProfile/EarCuffsProfile';
 
 
 
@@ -45,6 +53,16 @@ function App(props) {
           <Route path='/earRings' element={<EarRings />} />
           <Route path='/chains/:chainID' element={<ChainProfile/>} />
           <Route path='/earCuffs' element={<EarCuffs />} />
+          <Route path='/earCuffs/:earCuffID' element={<EarCuffsProfile/>} />
+          <Route path='/handBracelets/:handBraceletID' element={<HandBraceletProfile/>} />
+          <Route path='/handBracelets' element={<HandBracelets />} />
+          <Route path='/legBracelets/:legBraceletID' element={<ChainProfile/>} />
+          <Route path='/legBracelets' element={<LegBracelets />} />
+          <Route path='/rings' element={<Rings />} />
+          <Route path='/rings/:ringID' element={<RingProfile/>} />
+          <Route path='/bijouterie' element={<Bijouterie/>} />
+          <Route path='/bijouterie/:bijouterieID' element={<BijouterieProfile/>} />
+
         </Routes>
 
       </div>

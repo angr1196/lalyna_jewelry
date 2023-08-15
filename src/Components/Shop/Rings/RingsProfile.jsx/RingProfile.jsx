@@ -1,16 +1,17 @@
-import styles from './EarRingProfile.module.css'
+import styles from './RingProfile.module.css'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import ImageSlider from '../../../UX/ImageSlider';
 
 
-const EarRingProfile = () => {
+const RingProfile = () => {
 
     let params = useParams();
 
-    const earRingsList = useSelector(state => state.earRings.goodsArray) 
+    const ringsList = useSelector(state => state.rings.goodsArray) 
+    
+    const ringItem = ringsList.find((item) => item.product.id === params.ringID);
 
-    const earRingItem = earRingsList.find((item) => item.product.id === params.earRingID);
 
 
 
@@ -20,30 +21,30 @@ const EarRingProfile = () => {
                 {/* <img src={earRingItem.earRing.images[0]} alt="" /> */}
                 {/* <ProductSlider images={earRingItem.earRing.images} /> */}
                 {/* <ImageCarousel images={earRingItem.earRing.images} /> */}
-                <ImageSlider images={earRingItem.product.images}/>
+                <ImageSlider images={ringItem.product.images}/>
             </div>
 
             <div className={styles.descriptionBlock}>
 
                 <div>
-                    {earRingItem.product.id} {earRingItem.product.name}
+                    {ringItem.product.id} {ringItem.product.name}
                 </div>
                 {/* <div>
                     Назва: {earRingItem.earRing.name}
                 </div> */}
                 <div>
-                   {earRingItem.product.price}
+                   {ringItem.product.price}
                 </div>
                 <div>
                     Колір: срібний
                 </div>
 
                 <div>
-                    Матеріал:  {earRingItem.product.material}
+                    Матеріал:  {ringItem.product.material}
                 </div>
 
                 <div>
-                {earRingItem.product.description}
+                {ringItem.product.description}
                 </div>
             </div>
         </div>
@@ -51,4 +52,4 @@ const EarRingProfile = () => {
 
 }
 
-export default EarRingProfile;
+export default RingProfile;

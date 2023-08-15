@@ -7,7 +7,7 @@ import { fetchEarRings } from '../../../store/slices/earRingsSlice'
 
 const EarRings = () => {
 
-    const productList = useSelector(state => state.earRings.earRingsArray);
+    const productList = useSelector(state => state.earRings.goodsArray);
 
     const dispatchFunction = useDispatch();
 

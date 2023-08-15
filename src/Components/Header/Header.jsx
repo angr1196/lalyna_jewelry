@@ -34,7 +34,7 @@ let Header = (props) => {
                 <NavLink to={'/'} className={styles.logoWrapper}>
                     <img className={styles.logo} src={logo} alt="#" />
                 </NavLink>
-                <button className={styles.cartButton}>
+                <button className={styles.languageButton}>
                     UA
                 </button>
             </div>

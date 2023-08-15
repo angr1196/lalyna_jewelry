@@ -1,0 +1,41 @@
+
+
+.slider-container {
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  position: relative;
+}
+
+/* .slider-slide {
+  width: 100%;
+  height: 100%; 
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-slide.active {
+  display: block;
+} */
+
+.slider-slide {
+  width: 100%;
+  height: 100%; 
+  opacity: 0; /* Изначально скрываем слайд */
+  transition: opacity 0.5s ease-in-out;
+  position: absolute; /* Используем позиционирование */
+  top: 0;
+  left: 0;
+}
+
+.slider-slide.active {
+  opacity: 1; /* Показываем активный слайд */
+  z-index: 1; /* Поднимаем активный слайд над остальными */
+}
+
+.slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+}
+
