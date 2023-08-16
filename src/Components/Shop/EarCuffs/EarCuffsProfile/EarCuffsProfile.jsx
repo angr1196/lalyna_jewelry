@@ -38,7 +38,7 @@ const EarCuffsProfile = () => {
                 </div>
 
                 <div className={styles.size}>
-                Зозмір: {earCuffItem.product.size}
+                Розмір: {earCuffItem.product.size}
                 </div>
             </div>
         </div>
