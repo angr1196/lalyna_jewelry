@@ -79,4 +79,8 @@ cursor: pointer;
     align-items:center;
     border-bottom: 1px solid #B0BEC5;
   }
+
+  .emptyDiv{
+    width: 30px;
+  }
 }

@@ -40,13 +40,13 @@ let Header = (props) => {
             </div>
 
             <div className={styles.navDesktop}>
-                <div>
+                <div className={styles.emptyDiv}>
 
                 </div>
                 <NavLink to={'/'} className={styles.logoWrapper}>
                     <img className={styles.logo} src={logo} alt="#" />
                 </NavLink>
-                <button className={styles.cartButton}>
+                <button className={styles.languageButton}>
                     UA
                 </button>
 

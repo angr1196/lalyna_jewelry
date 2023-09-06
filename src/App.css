@@ -57,6 +57,10 @@ body, html {
 }
 
 .content-wrapper{
+ 
+  
+  display: flex;
+  justify-content: center;
   flex: 1;
   padding: 15px 20px;
   position: relative;
@@ -69,7 +73,7 @@ body, html {
 
 @media(min-width: 1024px){
   .content-wrapper{
-    padding: 15px 200px;
+    padding: 15px 210px;
   
   }
 }

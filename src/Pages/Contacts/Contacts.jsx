@@ -21,7 +21,7 @@ const Contacts = (props) => {
                 <div className={styles.contactItem}>
                     <h3>Також Ви можете нас знайти:</h3>
                     <p>
-                        м. Киів <br />
+                        м. Київ <br />
                         вул. Євгена Коновальця 36-В <br />
                         Салон краси M.Sha Nail Bar</p>
                 </div>

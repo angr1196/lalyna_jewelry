@@ -1,5 +1,13 @@
 .container{
     font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 840px;
+}
+
+.photoBlock{
+    margin-bottom: 10px;
 }
 
 .topic{
@@ -18,10 +26,51 @@
 
 .material{
     font-size: 16px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 
 }
 
 .size{
     font-size: 16px;
+}
+
+.buyButton{
+    margin-top: 15px;
+}
+
+.buyButton button{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    height: 44px;
+    width: 100%;
+    
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+
+
+}
+
+@media(min-width: 561px){
+    .container{
+        flex-direction: row;
+        
+    }
+    .photoBlock{
+        margin-bottom: 0;
+        padding-right: 10px;
+        width: 50%;
+     
+    }
+    .descriptionBlock{
+        width: 50%;
+        padding-left: 10px;
+    }
+}
+
+@media(min-width: 1024px){
+    .container{
+        max-width: 780px;
+    }
 }
