@@ -5,11 +5,7 @@ import { useEffect } from 'react'
 import { fetchLegBracelets } from '../../../store/slices/legBraceletsSlice'
 import NoGoods from '../NoGoods/NoGoods'
 
-
 const LegBracelets = () => {
-
-    
-    
 
     const dispatchFunction = useDispatch();
 
@@ -18,12 +14,10 @@ const LegBracelets = () => {
     }, []);
 
     const productList = useSelector(state => state.legBracelets.goodsArray);
-    console.log(productList)
 
     return (
         <div className={styles.container}>
             {productList.length>0?<GoodsList productList={productList} />:<NoGoods/>}
-            
         </div>
     )
 }

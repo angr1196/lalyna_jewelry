@@ -1,13 +1,8 @@
-
-
-
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React, { useState, useEffect } from 'react';
-import styles from './IntroSlider.module.css'; // Создайте этот модуль для стилей
-
-
+import styles from './IntroSlider.module.css';
+import classNames from 'classnames';
 
 const IntroSlider = ({ photos }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +14,7 @@ const IntroSlider = ({ photos }) => {
       } else {
         setCurrentIndex(currentIndex + 1);
       }
-    }, 6500); // Интервал в миллисекундах между слайдами (3 секунды)
+    }, 6500);
 
     return () => {
       clearInterval(interval);
@@ -27,13 +22,13 @@ const IntroSlider = ({ photos }) => {
   }, [currentIndex, photos.length]);
 
   return (
-    <div className={styles['slider-container']}>
+    <div className={styles.sliderContainer}>
       {photos.map((photo, index) => (
         <div
           key={index}
-          className={`${styles['slider-slide']} ${
-            index === currentIndex ? styles['active'] : ''
-          }`}
+          className={classNames(styles.sliderSlide,
+            index === currentIndex ? styles.active : ''
+          )}
         >
           <img src={photo} alt={`Slide ${index}`} />
         </div>
@@ -45,4 +40,3 @@ const IntroSlider = ({ photos }) => {
 export default IntroSlider;
 
 
- 

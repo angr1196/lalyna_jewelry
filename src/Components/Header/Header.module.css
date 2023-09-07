@@ -1,39 +1,33 @@
-
-.container{
-   
+.container {
   background-color: #FFFFFF;
   position: sticky;
   top: 0px;
   z-index: 5;
-  
- 
-  
+
 }
 
-.navDesktop{
+.navDesktop {
   display: none;
 }
 
+.navMobile {
 
-.navMobile{
- 
   max-width: 100%;
   padding: 20px 18px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   border-bottom: 1px solid #B0BEC5;
 }
 
-.burgerButton{
-  
+.burgerButton {
   border: none;
-background: none;
-padding: 0;
-cursor: pointer;
+  background: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.languageButton{
+.languageButton {
   border: none;
   background: none;
   padding: 0;
@@ -45,42 +39,43 @@ cursor: pointer;
   font-weight: 600;
   text-decoration: none;
 
-
 }
 
-.logo{
+.logo {
   width: 150px;
   height: auto;
 }
-.cart{
+
+.cart {
   width: 20px;
 }
-.burger{
+
+.burger {
   width: 20px;
 }
 
-
-
-@media(min-width: 768px){
-  .logo{
+@media(min-width: 768px) {
+  .logo {
     width: 190px;
   }
 }
 
-@media(min-width: 1024px){
-  .navMobile{
+@media(min-width: 1024px) {
+  .navMobile {
     display: none;
   }
-  .navDesktop{
+
+  .navDesktop {
     max-width: 100%;
     padding: 24px 18px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     border-bottom: 1px solid #B0BEC5;
   }
 
-  .emptyDiv{
+  .emptyDiv {
     width: 30px;
   }
+
 }

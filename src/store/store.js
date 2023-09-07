@@ -7,8 +7,7 @@ import legBraceletsSlice from "./slices/legBraceletsSlice";
 import bijouterieSlice from "./slices/bijouterieSlice";
 import ringsSlice from "./slices/ringsSlice";
 
-// let store = 
-export default configureStore({
+let store = configureStore({
     reducer: {
         earRings: earRingsSlice.reducer,
         chains: chainsSlice.reducer,
@@ -21,4 +20,4 @@ export default configureStore({
 }
 )
 
-// export default store;
+export default store;

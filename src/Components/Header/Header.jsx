@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Navbar from '../Navbar/Navbar'
 import Backdrop from '../UX/Backdrop'
 
-let Header = (props) => {
+let Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -19,13 +19,13 @@ let Header = (props) => {
         setIsOpen(false);
     }
 
-
     return (
         <header className={styles.container}>
             <div className={styles.navMobile}>
                 <button className={styles.burgerButton} onClick={onOpenHandler} >
                     <img className={styles.burger} src={burgerIcon} alt="#" />
                 </button>
+
                 {isOpen &&
                     <Backdrop >
                         <Navbar onClose={onCloseHandler} />
@@ -34,6 +34,7 @@ let Header = (props) => {
                 <NavLink to={'/'} className={styles.logoWrapper}>
                     <img className={styles.logo} src={logo} alt="#" />
                 </NavLink>
+
                 <button className={styles.languageButton}>
                     UA
                 </button>
@@ -41,19 +42,18 @@ let Header = (props) => {
 
             <div className={styles.navDesktop}>
                 <div className={styles.emptyDiv}>
-
                 </div>
+
                 <NavLink to={'/'} className={styles.logoWrapper}>
                     <img className={styles.logo} src={logo} alt="#" />
                 </NavLink>
+
                 <button className={styles.languageButton}>
                     UA
                 </button>
 
                 <Navbar />
-
             </div>
-
         </header>
     )
 }

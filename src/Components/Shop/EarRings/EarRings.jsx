@@ -3,11 +3,9 @@ import GoodsList from '../../GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchEarRings } from '../../../store/slices/earRingsSlice'
-
+import NoGoods from '../NoGoods/NoGoods'
 
 const EarRings = () => {
-
-    
 
     const dispatchFunction = useDispatch();
 
@@ -19,7 +17,7 @@ const EarRings = () => {
 
     return (
         <div className={styles.container}>
-            <GoodsList productList={productList} />
+          {productList.length>0?<GoodsList productList={productList} />:<NoGoods/>}
         </div>
     )
 }

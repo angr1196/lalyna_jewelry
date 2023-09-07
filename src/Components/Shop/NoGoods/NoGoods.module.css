@@ -1,14 +1,13 @@
+.container {
 
-.container{
-
-    display:flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat';
-    color:black;
+    color: black;
     opacity: 0.7;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    
+
 }

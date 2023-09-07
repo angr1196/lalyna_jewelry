@@ -1,6 +1,6 @@
 
 
-.slider-container {
+.sliderContainer {
   width: 100%;
   height: 100%; 
   overflow: hidden;
@@ -18,7 +18,7 @@
   display: block;
 } */
 
-.slider-slide {
+.sliderSlide {
   width: 100%;
   height: 100%; 
   opacity: 0; /* Изначально скрываем слайд */
@@ -28,12 +28,12 @@
   left: 0;
 }
 
-.slider-slide.active {
+.sliderSlide.active {
   opacity: 1; /* Показываем активный слайд */
   z-index: 1; /* Поднимаем активный слайд над остальными */
 }
 
-.slider-slide img {
+.sliderSlide img {
   width: 100%;
   height: 100%;
   object-fit: fill; 
