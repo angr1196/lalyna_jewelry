@@ -2,8 +2,8 @@ import styles from './EarCuffs.module.css'
 import GoodsList from '../../GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchEarCuffs } from '../../../store/slices/earCuffsSlice'
-import NoGoods from '../NoGoods/NoGoods'
+import { fetchEarCuffs } from '../../../store/slices/goodsSlice'
+
 
 const EarCuffs = () => {
 
@@ -13,11 +13,11 @@ const EarCuffs = () => {
         dispatchFunction(fetchEarCuffs());
     }, []);
 
-    const productList = useSelector(state => state.earCuffs.goodsArray);
+    const productList = useSelector(state => state.goods.goodsArray);
 
     return (
         <div className={styles.container}>
-        {productList.length>0?<GoodsList productList={productList} />:<NoGoods/>}
+            <GoodsList productList={productList} />
         </div>
     )
 }

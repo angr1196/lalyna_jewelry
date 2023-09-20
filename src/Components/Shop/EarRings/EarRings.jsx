@@ -2,8 +2,8 @@ import styles from './EarRings.module.css'
 import GoodsList from '../../GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchEarRings } from '../../../store/slices/earRingsSlice'
-import NoGoods from '../NoGoods/NoGoods'
+import { fetchEarRings } from '../../../store/slices/goodsSlice'
+
 
 const EarRings = () => {
 
@@ -13,11 +13,11 @@ const EarRings = () => {
         dispatchFunction(fetchEarRings());
     }, []);
 
-    const productList = useSelector(state => state.earRings.goodsArray);
+    const productList = useSelector(state => state.goods.goodsArray);
 
     return (
         <div className={styles.container}>
-          {productList.length>0?<GoodsList productList={productList} />:<NoGoods/>}
+            <GoodsList productList={productList} />
         </div>
     )
 }

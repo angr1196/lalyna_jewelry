@@ -26,7 +26,8 @@ const Contacts = () => {
                     <p>
                         м. Київ <br />
                         вул. Євгена Коновальця 36-В <br />
-                        Салон краси M.Sha Nail Bar</p>
+                        Салон краси M.Sha Nail Bar
+                    </p>
                 </div>
             </div>
         </div>

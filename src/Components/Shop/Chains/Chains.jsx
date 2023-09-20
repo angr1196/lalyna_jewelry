@@ -2,8 +2,8 @@ import styles from './Chains.module.css'
 import GoodsList from '../../GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchChains } from '../../../store/slices/chainsSlice'
-import NoGoods from '../NoGoods/NoGoods'
+import { fetchChains } from '../../../store/slices/goodsSlice'
+
 
 
 const Chains = () => {
@@ -14,11 +14,13 @@ const Chains = () => {
         dispatchFunction(fetchChains());
     }, []);
 
-    const productList = useSelector(state => state.chains.goodsArray);
+
+    const productList = useSelector(state => state.goods.goodsArray);
+    console.log(productList)
 
     return (
         <div className={styles.container}>
-            {productList.length>0?<GoodsList productList={productList} />:<NoGoods/>}
+            <GoodsList productList={productList} />
         </div>
     )
 }

@@ -2,8 +2,8 @@ import styles from './HandBracelets.module.css'
 import GoodsList from '../../GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchHandBracelets } from '../../../store/slices/handBraceletsSlice'
-import NoGoods from '../NoGoods/NoGoods'
+import { fetchHandBracelets } from '../../../store/slices/goodsSlice'
+
 
 const HandBracelets = () => {
 
@@ -13,11 +13,11 @@ const HandBracelets = () => {
         dispatchFunction(fetchHandBracelets());
     }, []);
 
-    const productList = useSelector(state => state.handBracelets.goodsArray);
+    const productList = useSelector(state => state.goods.goodsArray);
 
     return (
         <div className={styles.container}>
-            {productList.length>0?<GoodsList productList={productList} />:<NoGoods/>}
+            <GoodsList productList={productList} />
         </div>
     )
 }
