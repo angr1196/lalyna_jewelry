@@ -1,19 +1,22 @@
-import styles from './HandBracelets.module.css'
-import GoodsList from '../../GoodsList/GoodsList'
+import styles from './Chains.module.css'
+import GoodsList from '../../Components/GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchHandBracelets } from '../../../store/slices/goodsSlice'
+import { fetchChains } from '../../store/slices/goodsSlice'
 
 
-const HandBracelets = () => {
+
+const Chains = () => {
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
-        dispatchFunction(fetchHandBracelets());
+        dispatchFunction(fetchChains());
     }, []);
 
+
     const productList = useSelector(state => state.goods.goodsArray);
+    console.log(productList)
 
     return (
         <div className={styles.container}>
@@ -22,4 +25,4 @@ const HandBracelets = () => {
     )
 }
 
-export default HandBracelets;
+export default Chains;

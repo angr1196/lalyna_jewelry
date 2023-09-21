@@ -1,16 +1,15 @@
-import styles from './LegBracelets.module.css'
-import GoodsList from '../../GoodsList/GoodsList'
+import styles from './Bijouterie.module.css'
+import GoodsList from '../../Components/GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchLegBracelets } from '../../../store/slices/goodsSlice'
+import { fetchBijouterie } from '../../store/slices/goodsSlice'
 
-
-const LegBracelets = () => {
+const Bijouterie = () => {
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
-        dispatchFunction(fetchLegBracelets());
+        dispatchFunction(fetchBijouterie());
     }, []);
 
     const productList = useSelector(state => state.goods.goodsArray);
@@ -22,4 +21,4 @@ const LegBracelets = () => {
     )
 }
 
-export default LegBracelets;
+export default Bijouterie;

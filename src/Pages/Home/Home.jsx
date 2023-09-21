@@ -1,6 +1,6 @@
 
 import styles from './Home.module.css'
-import IntroSlider from '../UX/IntroSlider';
+import IntroSlider from '../../UI/IntroSlider';
 import image1 from '../../assets/test/mobileImages/image1.jpg'
 import image2 from '../../assets/test/mobileImages/image2.jpg'
 import image3 from '../../assets/test/mobileImages/image3.jpg'

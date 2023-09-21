@@ -1,9 +1,9 @@
 
 import styles from './Rings.module.css'
-import GoodsList from '../../GoodsList/GoodsList'
+import GoodsList from '../../Components/GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchRings } from '../../../store/slices/goodsSlice'
+import { fetchRings } from '../../store/slices/goodsSlice'
 
 
 const Rings = () => {

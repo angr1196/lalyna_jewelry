@@ -1,16 +1,16 @@
-import styles from './EarRings.module.css'
-import GoodsList from '../../GoodsList/GoodsList'
+import styles from './EarCuffs.module.css'
+import GoodsList from '../../Components/GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { fetchEarRings } from '../../../store/slices/goodsSlice'
+import { fetchEarCuffs } from '../../store/slices/goodsSlice'
 
 
-const EarRings = () => {
+const EarCuffs = () => {
 
     const dispatchFunction = useDispatch();
 
     useEffect(() => {
-        dispatchFunction(fetchEarRings());
+        dispatchFunction(fetchEarCuffs());
     }, []);
 
     const productList = useSelector(state => state.goods.goodsArray);
@@ -22,4 +22,4 @@ const EarRings = () => {
     )
 }
 
-export default EarRings;
+export default EarCuffs;

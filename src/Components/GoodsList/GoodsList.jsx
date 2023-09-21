@@ -1,11 +1,11 @@
-import GoodsItem from "./GoodsItem/GoodsItem";
+import GoodsItem from "../GoodsItem/GoodsItem";
 import styles from './GoodsList.module.css'
 
-const GoodsList = (props) => {
+const GoodsList = ({ productList }) => {
 
     return (
-        <div className={styles.container}> 
-            {props.productList.map(item=><GoodsItem key ={item.product.id} product={item.product}/> )}  
+        <div className={styles.container}>
+            {productList.map(item => <GoodsItem key={item.product.id} product={item.product} />)}
         </div>
     )
 }

@@ -5,7 +5,7 @@ import cart from '../../assets/images/cart_icon.png'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import Navbar from '../Navbar/Navbar'
-import Backdrop from '../UX/Backdrop'
+import Backdrop from '../../UI/Backdrop'
 
 let Header = () => {
 
