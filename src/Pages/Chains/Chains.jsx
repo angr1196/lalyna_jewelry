@@ -14,9 +14,7 @@ const Chains = () => {
         dispatchFunction(fetchChains());
     }, []);
 
-
     const productList = useSelector(state => state.goods.goodsArray);
-    console.log(productList)
 
     return (
         <div className={styles.container}>

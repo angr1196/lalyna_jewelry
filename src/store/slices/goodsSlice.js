@@ -11,9 +11,7 @@ export const fetchChains = createAsyncThunk(
     'chains/fetchChains',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'chains'));
-        const response = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
         return response;
     }
 );
@@ -22,11 +20,8 @@ export const fetchHandBracelets = createAsyncThunk(
     'handBracelets/fetchHandBracelets',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'handBracelets'));
-        console.log(querySnapshot);
-        const handBracelets = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
-        return handBracelets;
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
+        return response;
     }
 );
 
@@ -34,10 +29,8 @@ export const fetchBijouterie = createAsyncThunk(
     'bijouterie/fetchBijouterie',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'bijouterie'));
-        const bijouterie = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
-        return bijouterie;
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
+        return response;
     }
 );
 
@@ -45,10 +38,8 @@ export const fetchEarCuffs = createAsyncThunk(
     'earCuffs/fetchEarRings',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'earCuffs'));
-        const earCuffs = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
-        return earCuffs;
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
+        return response;
     }
 );
 
@@ -56,10 +47,8 @@ export const fetchEarRings = createAsyncThunk(
     'earRings/fetchEarRings',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'earRings'));
-        const earRings = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
-        return earRings;
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
+        return response;
     }
 );
 
@@ -67,10 +56,8 @@ export const fetchLegBracelets = createAsyncThunk(
     'legBracelets/fetchLegBracelets',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'legBracelets'));
-        const legBracelets = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
-        return legBracelets;
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
+        return response;
     }
 );
 
@@ -78,10 +65,8 @@ export const fetchRings = createAsyncThunk(
     'rings/fetchRings',
     async () => {
         const querySnapshot = await getDocs(collection(db, 'rings'));
-        const rings = querySnapshot.docs.map((doc) => ({
-            product: doc.data(),
-        }));
-        return rings;
+        const response = querySnapshot.docs.map(doc => {return {...doc.data()}});
+        return response;
     }
 );
 
