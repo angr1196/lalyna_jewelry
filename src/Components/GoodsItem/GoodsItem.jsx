@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './GoodsItem.module.css'
+import { memo } from 'react';
 
 const GoodsItem = ({product}) => {
 
@@ -19,4 +20,4 @@ const GoodsItem = ({product}) => {
     )
 }
 
-export default GoodsItem;
+export default memo(GoodsItem);

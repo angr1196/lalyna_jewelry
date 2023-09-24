@@ -1,3 +1,4 @@
+import { memo } from "react";
 import GoodsItem from "../GoodsItem/GoodsItem";
 import styles from './GoodsList.module.css'
 
@@ -10,4 +11,4 @@ const GoodsList = ({ productList }) => {
     )
 }
 
-export default GoodsList;
+export default memo(GoodsList);

@@ -3,9 +3,12 @@ import GoodsList from '../../Components/GoodsList/GoodsList'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchHandBracelets } from '../../store/slices/goodsSlice'
+import Preloader from '../../UI/Preloader'
 
 
 const HandBracelets = () => {
+
+    const isFetching = useSelector(state => state.goods.isFetching)
 
     const dispatchFunction = useDispatch();
 
@@ -17,6 +20,7 @@ const HandBracelets = () => {
 
     return (
         <div className={styles.container}>
+            {isFetching && <Preloader/>}
             <GoodsList productList={productList} />
         </div>
     )
